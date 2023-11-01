@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(237, 237, 183);
+}
+#frame span{
+     height: 5vw;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /* background-color: rebeccapurple; */
+     font-size: 3vw;
+     font-weight: 700;
+     text-align: center;
+     padding: 0 5vw;
+     transform: translateY(-5vw);
+
+}
+#frame{
+    height: 5vw;
+    overflow: hidden;
+    /* background-color: red; */
+    z-index: 2;
+}
+
+#circle{
+    z-index: 1;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50% , 50%);
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    background-color: palevioletred;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+#frames{
+    display: flex;
+    gap:30px;
+}
